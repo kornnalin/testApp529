@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+      h1{
+        text-align: center;
+        }
+        h2{
+          font-size: 15px;
+          margin-top: -10px;
+          margin-left:15px;
+          background-color: white;
+          width:90px;
+        }
+        h3{
+            font-size: 15px;
+          }
+      .frame{
+        border: 1px solid black;
+      }
+      .container{
+        width: 50%;
+        margin: auto;
+      }
+
+  </style>
+  <body>
+    <h1>ร้านพิซซ่าหน้ามอ ยินดีต้อนรับ</h1>
+<form method="post" action="#">
+    <div class="container">
+        <div class="frame">
+              <h2>ข้อมูลผู้สั่งซื้อ</h2>
+                <h3>ชื่อ:<input type="text" name="name"></h3>
+                <h3>นามสกุล:<input type="text" name="surname"></h3>
+                <h3>เบอร์โทร:<input type="tel" name="phoneNumber"></h3>
+          </div>
+                <br>
+          <div class="frame">
+                <h2 style="width:145px;">เลือกพิซซ่าที่ต้องการ</h2>
+                <h3>ขนาด:</h3>
+                  <h3><input type="radio" name="small">เล็ก</h3>
+                  <h3><input type="radio" name="medium" >กลาง</h3>
+                  <h3><input type="radio" name="Large" >ใหญ่</h3>
+                            <h3>ท็อปปิ้ง(เลือกทุกอย่างที่ต้องการ)</h3>
+                  <h3><input type="checkbox" name="cheeses" >เพิ่มชีทพิเศษ</h3>
+                  <h3><input type="checkbox" name="sausage" >ไส้กรอก</h3>
+                  <h3>
+                    <input type="checkbox" name="ham" >แฮม
+                    <input type="checkbox" name="mushroom">เห็ด
+                  </h3>
+                  <h3>
+                    <input type="checkbox" name="chilli" >พริก
+                    <input type="checkbox" name="fish1">ปลาเค็ม
+                  </h3>
+                  <h3>
+                    <input type="checkbox" name="fish2" >ปลาร้า
+                    <input type="checkbox" name="porker">หมูหยอง
+                  </h3>
+            </div>
+            <h3><input type="submit" name="send" value="ยืนยันสั่งซื้อ"></h3>
+    </div>
+</form>
+
+  </body>
+</html>
