@@ -1,7 +1,7 @@
 {
   "name": "express-sandbox",
   "version": "1.0.0",
-  "main": "sayHi.html",
+  "main": "sayhi.html",
   "repository": "git@github.com:kornnalin/testApp529.git",
   "author": "firn firnr <firnfroy@gmail.com>",
   "license": "MIT",
