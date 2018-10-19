@@ -1,9 +1,9 @@
 {
   "name": "express-sandbox",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:banyawat/express-sandbox.git",
-  "author": "Banyawat Kaewsamer <banyawat@thinknet.co.th>",
+  "main": "sayHi.html",
+  "repository": "git@github.com:kornnalin/testApp529.git",
+  "author": "firn firnr <firnfroy@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",
