@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tag Member</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <style>
+      body{
+        background-color: pink;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1{
+        text-align: center;
+      }
+      h3{
+        border: 1px solid black;
+        border-radius:5px;
+        margin: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 15px;
+        padding-right:15px;
+        background-color: lightgray;
+      }
+        .tag{
+          width:60%;
+          margin: auto;
+        }
+
+        .box{
+          border: 1px solid black;
+          border-radius:5px;
+          background-color: white;
+        }
+        .but{
+          text-align: center;
+          border: none;
+          background-color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>แท็กสมาชิก</h1>
+    <div class="tag box">
+      <h3 id="n1">พี่ประวิม</h3>
+      <h3 id="n2">พี่แอน</h3>
+      <h3 id="n3">พี่หมาย</h3>
+      <h3 id="n4">พี่นพดล</h3>
+      <h3 id="n5">พี่สานนท์</h3>
+      <div class="but" ><input type="submit" name="send" value="ยืนยันสั่งซื้อ" style="font-size:20px;
+        border-radius:5px; "></div>
+      </br>
+    </div>
+
+    <script>
+    // document.getElementById("n1").onmouseenter = function(){mouseEnter()};
+    // document.getElementById("n1").onmouseleave = function(){mouseLeave()};
+    //
+    // function mouseEnter() {
+    // document.getElementById("h").style.color = "red";
+    // }
+    //
+    // function mouseLeave() {
+    //     document.getElementById("n1").style.color = "black";
+    // }
+
+    $(document).ready(function(){
+         $("h3").mouseenter(function(){
+               $(this).css("color","green");
+               $(this).css("background-color", "lightyellow");
+         });
+         $("h3").mouseleave(function() {
+               $(this).css("color","black");
+               $(this).css("background-color", "lightgray");
+         });
+       });
+
+
+
+    </script>
+  </body>
+</html>
