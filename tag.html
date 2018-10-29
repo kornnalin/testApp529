@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Tag Member</title>
+    <link rel="stylesheet" href="fonts/thsarabunnew.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <style>
       body{
-        background-color: pink;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 99, 71, 0.5);
+        font-family: 'TH Sarabun New', Times, Arial, Helvetica, sans-serif;
       }
 
       h1{
@@ -42,34 +43,23 @@
     </style>
   </head>
   <body>
-    <h1>แท็กสมาชิก</h1>
+    <h1><b>แท็กสมาชิก</b></h1>
     <div class="tag box">
       <h3 id="n1">พี่ประวิม</h3>
       <h3 id="n2">พี่แอน</h3>
       <h3 id="n3">พี่หมาย</h3>
       <h3 id="n4">พี่นพดล</h3>
       <h3 id="n5">พี่สานนท์</h3>
-      <div class="but" ><input type="submit" name="send" value="ยืนยันการแท็ก" style="font-size:50px;
-        border-radius:5px; "></div>
+      <div class="but" ><input type="submit" name="send" value="ยืนยันการแท๊ก" style="font-size:50px;
+        border-radius:5px; background-color: rgb(60, 179, 113)"></div>
       </br>
     </div>
 
     <script>
-    // document.getElementById("n1").onmouseenter = function(){mouseEnter()};
-    // document.getElementById("n1").onmouseleave = function(){mouseLeave()};
-    //
-    // function mouseEnter() {
-    // document.getElementById("h").style.color = "red";
-    // }
-    //
-    // function mouseLeave() {
-    //     document.getElementById("n1").style.color = "black";
-    // }
-
     $(document).ready(function(){
          $("h3").mouseenter(function(){
                $(this).css("color","green");
-               $(this).css("background-color", "lightyellow");
+               $(this).css("background-color", "rgb(255, 255, 71)");
          });
          $("h3").mouseleave(function() {
                $(this).css("color","black");
