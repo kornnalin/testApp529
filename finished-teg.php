@@ -7,7 +7,6 @@
   <style>
     body{
       text-align: center;
-      font-size: 18px;
     }
     h1{
       background-color:white;
@@ -17,7 +16,7 @@
       margin-bottom: 20%;
       padding-top:10px;
       padding-bottom:10px;
-      font-size: 80px;
+      font-size: 60px;
     }
     img{
       margin: auto;
