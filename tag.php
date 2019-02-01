@@ -14,10 +14,10 @@
 
       h1{
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
       }
       .name{
-        font-size: 35px;
+        font-size: 25px;
         border: 1px solid black;
         border-radius:5px;
         margin: 10px;
