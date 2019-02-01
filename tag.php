@@ -37,7 +37,7 @@
         .box{
           border: 1px solid black;
           border-radius:5px;
-          background-color: white
+          background-color: black;
 
         }
         input{
@@ -59,17 +59,22 @@
     <form action="finished-teg.php" method="post">
     <div class="container">
         <center><img src="2019-01-30_12_44_21.jpg" alt="image" class="col-sm-4 col-md-4"></center>
-        <div class="col-sm-7 col-md-7 tag box" >
+        <div class="col-sm-8 col-md-8 tag box" >
+        <div class="col-sm-4 col-md-4">
             <input class="name" type="button" name="but1" value="พี่ประวิม">
             <input class="name" type="button" name="but2" value="พี่แอน">
+        </div>
+        <div class="col-sm-4 col-md-4">
             <input class="name" type="button" name="but3" value="พี่หมาย">
             <input class="name" type="button" name="but4" value="พี่นพดล">
+        </div>
+        <div class="col-sm-4 col-md-4">
             <input class="name" type="button" name="but5" value="พี่สานนท์">
             <input class="name" type="submit" name="send" value="ยืนยันการแท็ก"
             style="border-radius:5px; background-color: rgb(60, 179, 113)">
-
-            </br>
         </div>
+            </br>
+     </div>
      </div>
     </form>
     <script>
