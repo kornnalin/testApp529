@@ -8,8 +8,6 @@
     <title>Tag Member</title>
     <link rel="stylesheet" href="fonts/thsarabunnew.css" />
     <link rel = "stylesheet" type = "text/css" href = "firn-style.css" >
-
-
     <style>
 
       h1{
@@ -17,7 +15,7 @@
         font-size: 40px;
       }
       .name{
-        font-size: 25px;
+        font-size: 40px;
         border: 1px solid black;
         border-radius:5px;
         margin: 10px;
@@ -30,14 +28,14 @@
         text-align: center;
       }
         .tag{
-          width:50%;
+          width:100%;
           margin: auto;
         }
 
         .box{
-          border: 1px solid black;
+          /* border: 1px solid black; */
           border-radius:5px;
-          background-color: black;
+          /* background-color: black; */
 
         }
         input{
@@ -59,7 +57,7 @@
     <form action="finished-teg.php" method="post">
     <div class="container">
         <center><img src="2019-01-30_12_44_21.jpg" alt="image" class="col-sm-4 col-md-4"></center>
-        <div class="col-sm-8 col-md-8 tag box" >
+        <div class="tag box" >
         <div class="col-sm-4 col-md-4">
             <input class="name" type="button" name="but1" value="พี่ประวิม">
             <input class="name" type="button" name="but2" value="พี่แอน">
