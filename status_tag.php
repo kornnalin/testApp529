@@ -14,8 +14,7 @@
     <h2><b>สถานะการแท็กภาพถ่าย<b></h2>
   <div class="container">
   <form>
-    <center>
-      <div class="col-sm-12 col-md-12 col-lg-12 choose_status">
+      <div class="choose_status">
         <label for="input_status">เลือกการแสดงสถานะ</label>
         <select  id="input_status" name ="status">
           <option></option>
@@ -23,9 +22,8 @@
           <option>ภาพที่ยังไม่ได้แท็ก</option>
           <option>แก้ไขภาพที่แท็กผิด</option>
         </select>
-        <input type="submit" name="send_status" value="ยืนยัน">
+        <input style="margin-top: 10px;" type="submit" name="send_status" value="ยืนยัน">
       </div>
-    </center>
   </form>
 </div>
 <?php
@@ -70,7 +68,22 @@ if ($_GET) {
 }else if($status=="แก้ไขภาพที่แท็กผิด"){
 ?>
   <h3><b>แก้ไขภาพที่แท็กผิด</b></h3>
-
+  <div class="container">
+  <form method="get" action="edit_tag.php">
+      <div class="choose_status">
+        <!-- <label for="input_status">เลือกรายชื่อคนที่จะแก้ไข</label> -->
+        <select  id="edit_status" name ="edit">
+          <option>เลือกรายชื่อคนที่จะแก้ไข</option>
+          <option name="CP01">พี่ประวิม</option>
+          <option name="CP02">พี่แอน</option>
+          <option name="CP03">พี่หมาย</option>
+          <option name="CP04">พี่นพดล</option>
+          <option name="CP05">พี่สานนท์</option>
+        </select>
+        <input style="margin-top: 10px;" type="submit" name="send_status" value="ยืนยัน">
+      </div>
+  </form>
+</div>
 <?php
 }
 }
