@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel = "stylesheet" type = "text/css" href = "style.css" >
-    <title>Alert Tags Image</title>
+    <title>Finished Tags Image</title>
   </head>
   <style>
     body{
@@ -29,6 +29,7 @@
   </style>
   <body>
     <h1>เจ้าของภาพนี้ถูกแท็กเรียบร้อยแล้ว</h1>
-    <img src="cartoon.png">
+    <a href="status_tag.php"><img src="cartoon.png"></a>
+
   </body>
 </html>
