@@ -10,9 +10,16 @@
     </head>
     <style>
     img{
-      width: 300px;
+      width: 200px;
       height: auto;
       text-align: center;
+    }
+    input{
+      font-family: 'TH Sarabun New', Times, Arial, Helvetica, sans-serif;
+      text-align: center;
+      border: none;
+      font-weight: bold;
+      width: 100%;
     }
     </style>
     <body>
@@ -23,27 +30,27 @@
 <?php
 if($_GET){
   $edit_tag = $_GET["edit"];
-  // echo $edit_tag."<br>";
+  //echo $edit_tag."<br>";
   ?>
   <div class="container">
       <center><img src="2019-01-30_12_44_21.jpg" alt="image" class="col-sm-4 col-md-4"></center>
-      <center><div class="tag box" >
-      <div>
-          <input class="name" type="button" name="but1" value="พี่ประวิม">
-          <input class="name" type="button" name="but2" value="พี่แอน">
-      </div>
-      <div>
-          <input class="name" type="button" name="but3" value="พี่หมาย">
-          <input class="name" type="button" name="but4" value="พี่นพดล">
-      </div>
-      <div>
-          <input class="name" type="button" name="but5" value="พี่สานนท์">
-
-      </div>
-      <input class="name" type="submit" name="send" value="ยืนยันการแท็ก"
-      style="border-radius:5px; background-color: rgb(60, 179, 113)">
-          </br>
-   </div></center>
+    <div class="container">
+      <h3><b>เจ้าของภาพ : <?php echo $edit_tag ?></b></h3>
+    <form>
+        <div class="choose_status" style="text-align:left; padding:0px;">
+          <label><b>แก้ไขเจ้าของภาพเป็น : </b></label>
+          <select  id="edit_tag" name ="edit_tag">
+            <option></option>
+            <option name="CP01">พี่ประวิม</option>
+            <option name="CP02">พี่แอน</option>
+            <option name="CP03">พี่หมาย</option>
+            <option name="CP04">พี่นพดล</option>
+            <option name="CP05">พี่สานนท์</option>
+          </select>
+          <input style="margin-top: 10px;" type="submit" name="send_status" value="ยืนยัน">
+        </div>
+    </form>
+  </div>
    </div>
   <?php
 }
