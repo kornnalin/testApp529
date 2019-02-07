@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <title>Tag Member</title>
     <link rel="stylesheet" href="fonts/thsarabunnew.css" />
-    <link rel = "stylesheet" type = "text/css" href = "firn-style.css" >
+    <link rel = "stylesheet" type = "text/css" href = "style.css" >
     <style>
 
       h1{
