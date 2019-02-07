@@ -7,6 +7,7 @@
   <style>
     body{
       text-align: center;
+      font-size: 18px;
     }
     h1{
       background-color:white;
@@ -19,21 +20,22 @@
       font-size: 60px;
     }
     img{
-      margin: auto;
-    width: 30%;
-
-    padding: 10px;
+      width: 50%;
+      height: auto;
+      margin: auto auto;
+      display: block;
+      padding: 5px;
     }
   </style>
   <body>
       <?php
-          $name_n1 = $_GET['n1'];
-          $name_n2 = $_GET['n2'];
-          $name_n3 = $_GET['n3'];
-          $name_n4 = $_GET['n4'];
-          $name_n5 = $_GET['n5'];
-          //echo $name_n1;
-          $array_name = array($name_n1,$name_n2,$name_n3,$name_n4,$name_n5);
+          // $name_n1 = $_GET['n1'];
+          // $name_n2 = $_GET['n2'];
+          // $name_n3 = $_GET['n3'];
+          // $name_n4 = $_GET['n4'];
+          // $name_n5 = $_GET['n5'];
+          // //echo $name_n1;
+          // $array_name = array($name_n1,$name_n2,$name_n3,$name_n4,$name_n5);
           // foreach ($array_name as $key => $value) {
           //   echo $value."<br>";
           //   if($value){
@@ -45,7 +47,7 @@
           // }
        ?>
     <h1>แท็กภาพถ่ายเสร็จเรียบร้อยแล้ว</h1>
-    <img src="327.jpg">
-    <a href="alert.html"><h3>Alert</h3></a>
+    <img src="2019-01-30_12_44_21.jpg">
+    <a href="alert.php"><h3>Alert</h3></a>
   </body>
 </html>
