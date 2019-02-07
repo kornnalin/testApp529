@@ -1,0 +1,32 @@
+body{
+  background-color: Orange;
+  font-family: 'TH Sarabun New', Times, Arial, Helvetica, sans-serif;
+
+
+}
+.choose_status{
+   font-size: 25px;
+      text-align: center;
+    padding: 1em;
+    color: black;
+
+}
+h2{
+  text-align: center;
+  margin-bottom: -20px;
+  font-size: 40px;
+}
+img{
+  width: 50%;
+  height: 70%;
+  margin: auto auto;
+  display: block;
+  padding: 5px;
+}
+h4{
+  margin-top: -3px;
+  text-align: center;
+}
+.firn{
+  border:1px solid black;
+}
