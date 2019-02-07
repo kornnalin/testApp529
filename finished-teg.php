@@ -1,7 +1,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel = "stylesheet" type = "text/css" href = "firn-style.css" >
+    <link rel = "stylesheet" type = "text/css" href = "style.css" >
     <title>Finished Tags Image</title>
   </head>
   <style>
