@@ -7,31 +7,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "firn-style.css" >
+    <link rel = "stylesheet" type = "text/css" href = "style.css" >
     </head>
-  <style>
-      h2{
-        text-align: center;
-        margin-bottom: -20px;
-        font-size: 40px;
-      }
-      img{
-        width: 50%;
-        height: 70%;
-        margin: auto auto;
-        display: block;
-        padding: 5px;
-      }
-      h4{
-        margin-top: -3px;
-        text-align: center;
-      }
-      .firn{
-        border:1px solid black;
-      }
-  </style>
+
   <body>
     <h2><b>สถานะการแท็กภาพถ่าย<b></h2>
+  <div class="container">
+  <form>
+    <center>
+      <div class="col-sm-12 col-md-12 col-lg-12 choose_status">
+        <label for="input_status">เลือกการแสดงสถานะ</label>
+        <select  id="input_status" name ="status">
+          <option></option>
+          <option>ภาพที่ถูกแท็กเจ้าของภาพแล้ว</option>
+          <option>ภาพที่ยังไม่ได้แท็ก</option>
+          <option>แก้ไขภาพที่แท็กผิด</option>
+        </select>
+        <input type="submit" name="send_status" value="ยืนยัน">
+      </div>
+    </center>
+  </form>
+</div>
+<?php
+if ($_GET) {
+  // echo "<h3>".$_GET["status"]."</h3>";
+  $status = $_GET["status"];
+  if($status =="ภาพที่ถูกแท็กเจ้าของภาพแล้ว"){
+    ?>
     <h3><b>ภาพที่ถูกแท็กเจ้าของภาพแล้ว<b></h3>
     <div class="container">
       <div class="row">
@@ -53,16 +55,25 @@
         </div>
       </div>
       </div>
-      <h3><b>ภาพที่ยังไม่ได้แท็ก</b></h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-3 col-lg-3" >
-              <a href="tag.php"><img src="335.jpg" alt="P'Tangmo"></a>
-          </div>
+  <?php
+  }else if($status =="ภาพที่ยังไม่ได้แท็ก"){
+  ?>
+    <h3><b>ภาพที่ยังไม่ได้แท็ก</b></h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-3" >
+            <a href="tag.php"><img src="335.jpg" alt="P'Tangmo"></a>
         </div>
+      </div>
+  </div>
+<?php
+}else if($status=="แก้ไขภาพที่แท็กผิด"){
+?>
+  <h3><b>แก้ไขภาพที่แท็กผิด</b></h3>
 
-
-
-    </div>
-  </body>
+<?php
+}
+}
+?>
+</body>
 </html>
