@@ -14,30 +14,7 @@
         text-align: center;
         font-size: 40px;
       }
-      .name{
-        font-size: 40px;
-        border: 1px solid black;
-        border-radius:5px;
-        margin: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-left: 10px;
-        padding-right:10px;
-        background-color: lightgray;
-        font-family: 'TH Sarabun New', Times, Arial, Helvetica, sans-serif;
-        text-align: center;
-      }
-        .tag{
-          width:100%;
-          margin: auto;
-        }
-
-        .box{
-          /* border: 1px solid black; */
-          border-radius:5px;
-          /* background-color: black; */
-
-        }
+      
         input{
           font-family: 'TH Sarabun New', Times, Arial, Helvetica, sans-serif;
           text-align: center;
