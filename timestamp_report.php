@@ -1,5 +1,4 @@
-้<!DOCTYPE html>
-<html lang="en" dir="ltr">
+้<html lang="en" dir="ltr">
 <head>
   <title>Work Reports</title>
   <meta charset="utf-8">
@@ -10,7 +9,7 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" >
 </head>
 <body>
-      <h2>รายงานเวลาการเข้างาน</h2>
+      <h2>รายงานเวลาการเข้างาน</h2><br>
       <div class="container">
       <form method="get" action="timestamp.php">
           <div class="choose_timestamp">
