@@ -15,10 +15,11 @@ $who_timestamp = $_GET['timestamp'];
 </head>
 <body>
       <h2>รายงานเวลาการเข้างาน</h2><br>
+      <h3>เลือกวันที่ต้องการดูจากด้านล่าง</h3><br>
 </body>
 </html>
 <?php
-if ($who_timestamp) {  
+if ($who_timestamp) {
   include 'calender.php';
 }
 ?>
