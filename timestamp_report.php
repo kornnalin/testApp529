@@ -12,7 +12,7 @@
 <body>
       <h2>รายงานเวลาการเข้างาน</h2>
       <div class="container">
-      <form>
+      <form method="get" action="timestamp.php">
           <div class="choose_timestamp">
             <label for="report">เลือกรายชื่อ</label>
             <select  id="timestamp" name ="timestamp">
