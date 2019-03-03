@@ -2,46 +2,49 @@
 header('Content-Type: text/html; charset=utf-8');
 $weekDay = array( 'อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสฯ', 'ศุกร์', 'เสาร์');
 $thaiMon = array( "01" => "มกราคม", "02" => "กุมภาพันธ์", "03" => "มีนาคม", "04" => "เมษายน",
-      "05" => "พฤษภาคม","06" => "มิถุนายน", "07" => "กรกฎาคม", "08" => "สิงหาคม",
-      "09" => "กันยายน", "10" => "ตุลาคม", "11" => "พฤศจิกายน", "12" => "ธันวาคม");
+                  "05" => "พฤษภาคม","06" => "มิถุนายน", "07" => "กรกฎาคม", "08" => "สิงหาคม",
+                  "09" => "กันยายน", "10" => "ตุลาคม", "11" => "พฤศจิกายน", "12" => "ธันวาคม");
 
 //Sun - Sat
 $month = isset($_GET['month']) ? $_GET['month'] : date('m'); //ถ้าส่งค่าเดือนมาใช้ค่าที่ส่งมา ถ้าไม่ส่งมาด้วย ใช้เดือนปัจจุบัน
+// $month = $month+1;
+// $month = "0".$month;
+// echo $month."<br>";
 $year = isset($_GET['year']) ? $_GET['year'] : date('Y'); //ถ้าส่งค่าปีมาใช้ค่าที่ส่งมา ถ้าไม่ส่งมาด้วย ใช้ปีปัจจุบัน
-
-//วันที่
+// echo $year."<br>";
 $startDay = $year.'-'.$month."-01";   //วันที่เริ่มต้นของเดือน
-
+// echo $startDay."<br>";
 $timeDate = strtotime($startDay);   //เปลี่ยนวันที่เป็น timestamp
+// echo $timeDate."<br>";
 $lastDay = date("t", $timeDate);   //จำนวนวันของเดือน
-
+// echo $lastDay."<br>";
 $endDay = $year.'-'.$month."-". $lastDay;  //วันที่สุดท้ายของเดือน
-
+// echo $endDay."<br>";
 $startPoint = date('w', $timeDate);   //จุดเริ่มต้น วันในสัปดาห์
-
-//echo "<br>\$data ";
-//print_r($data);
-//echo "<hr>";
+// echo $startPoint."<br>";
+$currentDay = date("d")+1;
+// echo $currentDay."<br>";
 ?>
 <html>
  <head>
- <title>ทดลองสร้างปฏิทินด้วย PHP</title>
+ <title>Calendar</title>
  <script type='text/javascript'>
     function goTo(month, year){
    window.location.href = "day_of_week.php?year="+ year +"&month="+ month;
     }
  </script>
  <style>
- th,td{width:50px;height: 30px; text-align:center}
- th{background-color: #eeeeee;}
- #tb_calendar, #main{ width : 500px;}
- #main{ border : 2px solid #46A5E0;}
+ th,td{width:50px; height: 30px; text-align:center; background-color: white;}
+ th{background-color: #FFE800;}
+ #tb_calendar, #main{ width : 500px; }
+ #main{ border : 5px solid #FFC900;}
  #nav{
-  background-color: #0C79A4;
+  font-size: 20px;
+  background-color: #FFC900;
   min-height: 20px;
   padding: 10px;
-  text-align: center;
-  color : white;
+  /* text-align: center; */
+  color : black;
  }
  .navLeft{float: left; }
  .navRight{float: right;}
@@ -51,27 +54,28 @@ $startPoint = date('w', $timeDate);   //จุดเริ่มต้น วั
  <body>
 
 <?php
-echo "<br/>ตำแหน่งของวันที่ $startDay คือ <strong>", $startPoint , " (ตรงกับ วัน" , $weekDay[$startPoint].")</strong>";
+$title = "<strong>เดือน $thaiMon[$month] ".$year." </strong>";
+// echo $title."<br>";
 
-$title = "เดือน $thaiMon[$month] <strong>". $startDay. " : ". $endDay."</strong>";
-
-//ลดเวลาลง 1 เดือน
-$prevMonTime = strtotime ( '-1 month' , $timeDate  );
-$prevMon = date('m', $prevMonTime);
-$prevYear = date('Y', $prevMonTime);
-//เพิ่มเวลาขึ้น 1 เดือน
-$nextMonTime = strtotime ( '+1 month' , $timeDate  );
-$nextMon = date('m', $nextMonTime);
-$nextYear = date('Y', $nextMonTime);
+// //ลดเวลาลง 1 เดือน
+// $prevMonTime = strtotime ( '-1 month' , $timeDate  );
+// $prevMon = date('m', $prevMonTime);
+// $prevYear = date('Y', $prevMonTime);
+// // echo $prevMonTime."<br>";
+// // echo $prevMon."<br>";
+// // echo $prevYear."<br>";
+//
+// //เพิ่มเวลาขึ้น 1 เดือน
+// $nextMonTime = strtotime ( '+1 month' , $timeDate  );
+// $nextMon = date('m', $nextMonTime);
+// $nextYear = date('Y', $nextMonTime);
 
 echo '<div id="main">';
-echo '<div id="nav">
-  <button class="navLeft" onclick="goTo(\''.$prevMon.'\', \''.$prevYear.'\');"><< เดือนที่แล้ว</button>
+  echo '<div id="nav">
   <div class="title">'.$title.'</div>
-  <button class="navRight" onclick="goTo(\''.$nextMon.'\', \''.$nextYear.'\');">เดือนต่อไป >></button>
- </div>
+</div>
  <div style="clear:both"></div>';
-echo "<table id='tb_calendar' border='1'>"; //เปิดตาราง
+echo "<table id='tb_calendar' border='0'>"; //เปิดตาราง
 echo "<tr>
   <th>อาทิตย์</th><th>จันทร์</th><th>อังคาร</th><th>พุธ</th><th>พฤหัสฯ</th><th>ศุกร์</th><th>เสาร์</th>
 </tr>";
@@ -82,7 +86,12 @@ if($startPoint < 7){         //ถ้าวันอาทิตย์จะเ�
 }
 for($i=1; $i <= $lastDay; $i++){ //วนลูป ตั้งแต่วันที่ 1 ถึงวันสุดท้ายของเดือน
  $col++;       //นับจำนวนคอลัมน์ เพื่อนำไปเช็กว่าครบ 7 คอลัมน์รึยัง
- echo "<td>", $i , "</td>";  //สร้างคอลัมน์ แสดงวันที่
+ if($i==$currentDay){
+   echo "<td style='background-color:red;'>", $i , "</td>";
+ }else{
+   echo "<td>", $i , "</td>";
+ }
+   //สร้างคอลัมน์ แสดงวันที่
  if($col % 7 == false){   //ถ้าครบ 7 คอลัมน์ให้ขึ้นบรรทัดใหม่
   echo "</tr><tr>";   //ปิดแถวเดิม และขึ้นแถวใหม่
   $col = 0;     //เริ่มตัวนับคอลัมน์ใหม่
