@@ -1,4 +1,4 @@
-้<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <title>Work Reports</title>
   <meta charset="utf-8">
