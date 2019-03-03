@@ -22,7 +22,7 @@
               <option name="CP03">พี่หมาย</option>
               <option name="CP04">พี่นพดล</option>
               <option name="CP05">พี่สานนท์</option>
-              <option name="CP05">พี่เอ๋ย</option>
+              <option name="CP06">พี่เอ๋ย</option>
             </select>
             <input style="margin-top: 10px;" type="submit" name="send_report" value="ยืนยัน">
           </div>
