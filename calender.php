@@ -36,7 +36,7 @@ $currentDay = date("d")+1;
  <style>
  th,td{width:50px; height: 30px; text-align:center; background-color: white;}
  th{background-color: #FFE800;}
- #tb_calendar, #main{ width : 500px; }
+ #tb_calendar, #main{ width : 400px; }
  #main{ border : 5px solid #FFC900;}
  #nav{
   font-size: 20px;
@@ -48,7 +48,7 @@ $currentDay = date("d")+1;
  }
  .navLeft{float: left; }
  .navRight{float: right;}
- .title{float: left; text-align: center; width: 300px;}
+ .title{float: left; text-align: center; width: 200px;}
  </style>
  </head>
  <body>

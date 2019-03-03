@@ -18,5 +18,7 @@ $who_timestamp = $_GET['timestamp'];
 </body>
 </html>
 <?php
-include 'calender.php';
+if ($who_timestamp) {  
+  include 'calender.php';
+}
 ?>
