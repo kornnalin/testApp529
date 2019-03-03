@@ -17,3 +17,6 @@ $who_timestamp = $_GET['timestamp'];
       <h2>รายงานเวลาการเข้างาน</h2><br>
 </body>
 </html>
+<?php
+
+?>

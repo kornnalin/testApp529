@@ -11,7 +11,7 @@
 <body>
   <h2>รายงานเวลาการเข้างาน</h2><br>
       <div class="container">
-      <form method="get" action="timestamp.php">
+      <center><form method="get" action="timestamp.php">
           <div class="choose_timestamp">
             <label for="report">เลือกรายชื่อ</label>
             <select  id="timestamp" name ="timestamp">
@@ -25,7 +25,7 @@
             </select>
             <input style="margin-top: 10px;" type="submit" name="send_report" value="ยืนยัน">
           </div>
-        </form>
+        </form></<center>
     </div>
   </body>
 </html>
