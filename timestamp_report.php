@@ -9,7 +9,7 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" >
 </head>
 <body>
-      <h2>รายงานเวลาการเข้างาน</h2><br>
+  <h2>รายงานเวลาการเข้างาน</h2><br>
       <div class="container">
       <form method="get" action="timestamp.php">
           <div class="choose_timestamp">
@@ -25,7 +25,7 @@
             </select>
             <input style="margin-top: 10px;" type="submit" name="send_report" value="ยืนยัน">
           </div>
-      </form>
+        </form>
     </div>
-</body>
+  </body>
 </html>
