@@ -13,7 +13,7 @@
       <h2>รายงานเวลาการเข้างาน</h2>
       <div class="container">
       <form>
-          <div class="choose_status">
+          <div class="choose_timestamp">
             <label for="report">เลือกรายชื่อ</label>
             <select  id="timestamp" name ="timestamp">
               <option></option>
@@ -22,6 +22,7 @@
               <option name="CP03">พี่หมาย</option>
               <option name="CP04">พี่นพดล</option>
               <option name="CP05">พี่สานนท์</option>
+              <option name="CP05">พี่เอ๋ย</option>
             </select>
             <input style="margin-top: 10px;" type="submit" name="send_report" value="ยืนยัน">
           </div>
