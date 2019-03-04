@@ -11,16 +11,16 @@
 </head>
 <style>
 img{
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 </style>
 <body>
       <h2><b>รายงานเวลาการเข้างาน</b></h2><br>
-      <center><img src="2019-01-30_12_44_21.jpg" alt="img"></center>
       <center><h3>วันจันทร์ที่ 3 มีนาคม 2562</h3></center>
       <center><h3>เข้างาน  : <b>08.00 น.</b></h3></center>
       <center><h3>ออกงาน : <b>17.00 น.</b></h3></center>
+      <center><img src="2019-01-30_12_44_21.jpg" alt="img"></center>
 
 </body>
 </html>
