@@ -10,8 +10,8 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" >
 </head>
 <body>
-      <h2>รายงานเวลาการเข้างาน</h2><br>
-      <center><h3>วันจันทร์ที่ 4 มีนาคม 2019</h3></center>
+      <h2><b>รายงานเวลาการเข้างาน</b></h2><br>
+      <center><h3>วันจันทร์ที่ 4 มีนาคม 2562</h3></center>
       <center><h3>เข้างาน  : <b>08.00 น.</b></h3></center>
       <center><h3>ออกงาน : <b>17.00 น.</b></h3></center>
 
