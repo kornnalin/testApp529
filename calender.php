@@ -22,7 +22,7 @@ $endDay = $year.'-'.$month."-". $lastDay;  //วันที่สุดท้�
 // echo $endDay."<br>";
 $startPoint = date('w', $timeDate);   //จุดเริ่มต้น วันในสัปดาห์
 // echo $startPoint."<br>";
-// $currentDay = date("d")+1;
+$currentDay = date("d");
 // echo $currentDay."<br>";
 ?>
 <html>
