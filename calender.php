@@ -91,7 +91,7 @@ for($i=1; $i <= $lastDay; $i++){ //วนลูป ตั้งแต่วั�
  if($i==$currentDay){
    echo "<td style='background-color:red;'><a href='show_timestamp.php'>", $i , "</a></td>";
  }else if($i<$currentDay){
-   echo "<td style='background-color:red;'><a href='show_timestamp.php'>", $i , "</a></td>";
+   echo "<td><a href='show_timestamp.php'>", $i , "</a></td>";
  }else{
    echo "<td>style='color:black;'>", $i , "</td>";
  }
