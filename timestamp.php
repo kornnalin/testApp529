@@ -23,4 +23,4 @@ if ($who_timestamp) {
   include 'calender.php';
 }
 ?>
-<button  style="text-align:center"><b><a href="show_timestamp.php">ยืนยัน</a></b></button>
+<button  style="text-align:center; margin-top: 10px; float: right;"><b><a href="show_timestamp.php">ยืนยัน</a></b></button>
