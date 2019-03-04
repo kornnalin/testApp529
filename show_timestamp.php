@@ -11,11 +11,8 @@
 </head>
 <style>
 img{
-  width: 20%;
-  height: 20%;
-  margin: auto auto;
-  display: block;
-  padding: 5px;
+  width: 30%;
+  height: auto;
 }
 </style>
 <body>
