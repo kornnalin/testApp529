@@ -14,7 +14,7 @@
 </head>
 <style>
 input{
-  width: 25%;
+  width: 20%;
   border-color: gray;
   padding: 3px;
 }
@@ -24,9 +24,9 @@ input{
       <h4>เลือกวันที่ต้องการดูจากด้านล่าง</h4>
       <div class="row">
         <center><form action="test.php" method="get">
-        <h3>เลือกวันที่วันแรก : <input type="date" name="first" ></h3><br><br>
-        <h3>เลือกวันสุดท้าย  : <input type="date" name="last"></h3><br><br>
-        <h3><input type="submit" value="ยืนยัน"></h3>
+        <h4>เลือกวันที่วันแรก : <input type="date" name="first" ></h4><br><br>
+        <h4>เลือกวันสุดท้าย  : <input type="date" name="last"></h4><br><br>
+        <h4><input type="submit" value="ยืนยัน"></h4>
       </form></center>
       </div>
 </body>
