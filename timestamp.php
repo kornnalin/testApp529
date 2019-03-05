@@ -28,8 +28,8 @@ input{
       <div class="row">
         <center>
         <form action="show_timestamp.php" method="get">
-        <h4>เลือกวันที่วันแรก : <input type="date" name="first" ></h4><br>
-        <h4>เลือกวันสุดท้าย  : <input type="date" name="last"></h4><br>
+        <h4>วันแรก : <input type="date" name="first" ></h4><br>
+        <h4>ถึงวันที่  : <input type="date" name="last"></h4><br>
         <h4><input type="submit" value="ยืนยัน"></h4>
       </form>
       </center>
