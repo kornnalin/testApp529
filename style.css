@@ -1,5 +1,6 @@
 body{
-  background-color: #fff5cc;
+  //#fff5cc;
+  background-color: #FFC900;
   font-family: 'TH Sarabun New', Times, Arial, Helvetica, sans-serif;
 }
 .choose_status,.choose_timestamp{

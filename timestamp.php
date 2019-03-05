@@ -13,9 +13,6 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" >
 </head>
 <style>
-body{
-  background-color:#FFC900;
-}
 h2{
   color: blue;
 }
@@ -26,7 +23,7 @@ input{
 }
 </style>
 <body>
-      <h2<b>รายงานเวลาการเข้างาน<b></h2><br><br>
+      <h2><b>รายงานเวลาการเข้างาน<b></h2><br><br>
       <h4>เลือกวันที่ต้องการดูจากด้านล่าง</h4>
       <div class="row">
         <center>
