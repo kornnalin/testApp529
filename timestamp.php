@@ -17,7 +17,7 @@ h2{
   color: blue;
 }
 input{
-  width: 20%;
+  width: auto;
   border-color: gray;
   padding: 3px;
 }
@@ -30,7 +30,7 @@ input{
         <form action="show_timestamp.php" method="get">
         <h4>วันแรก : <input type="date" name="first" ></h4><br>
         <h4>ถึงวันที่  : <input type="date" name="last"></h4><br>
-        <h4><input type="submit" value="ยืนยัน"></h4>
+        <h4 style="background-color:#FFC900"><input type="submit" value="ยืนยัน"></h4>
       </form>
       </center>
       </div>
