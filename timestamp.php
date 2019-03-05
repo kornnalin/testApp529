@@ -13,6 +13,9 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" >
 </head>
 <style>
+h2{
+  color: blue;
+}
 input{
   width: 20%;
   border-color: gray;
@@ -23,11 +26,13 @@ input{
       <h2>รายงานเวลาการเข้างาน</h2><br>
       <h4>เลือกวันที่ต้องการดูจากด้านล่าง</h4>
       <div class="row">
-        <center><form action="test.php" method="get">
+        <center>
+        <form action="show_timestamp.php" method="get">
         <h4>เลือกวันที่วันแรก : <input type="date" name="first" ></h4><br><br>
         <h4>เลือกวันสุดท้าย  : <input type="date" name="last"></h4><br><br>
         <h4><input type="submit" value="ยืนยัน"></h4>
-      </form></center>
+      </form>
+      </center>
       </div>
 </body>
 </html>
