@@ -13,6 +13,9 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" >
 </head>
 <style>
+body{
+  background-color: #FFC900;
+}
 h2{
   color: blue;
 }
