@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <title>Tag Image</title>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
       }
       img{
         width: 50%;
-        height: 70%;
+        height: 30%;
         margin: auto auto;
         display: block;
         padding: 5px;
@@ -33,15 +33,45 @@
   <body>
     <h2><b>สถานะการแท็กภาพถ่าย<b></h2>
       <h3><b>ภาพที่ยังไม่ได้แท็ก</b></h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-3 col-lg-3" >
-              <a href="tag.php"><img src="2019-01-30_12_44_21.jpg" alt="P'Tangmo"></a>
-          </div>
+<?php
+include("connectDB.php");
+include("image_folder1.php");
+
+session_start();
+$UserID = $_SESSION["userid"];
+// echo $UserID."<br>";
+
+//Sort Image
+$today = date("Y-m-d");
+// echo "Today ".$today."<br>";
+$this_day = substr($today,8,2);
+// echo $this_day."<br>";
+
+
+$min_day;
+$index_min_day;
+sort($image_name);
+foreach ($image_name as $key => $value) {
+// echo $value."<br>";
+}
+
+// echo $min_day."<br>";
+foreach ($image_name as $image) {
+  // echo $image."<br>";
+  ?>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-3" >
+        <?php
+            echo '<center>'."<a href='login.php?img=",urlencode($image),"'>".'<img src="image/'.$image.'" alt="'.$image.'" border="0" /></a></center>';
+            // echo "<a href=tag.php?img=",urlencode($image),">$image</a>";
+            // echo $image."<br>";
+          ?>
         </div>
-
-
-
+      </div>
     </div>
+<?php
+}
+?>
   </body>
 </html>

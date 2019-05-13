@@ -29,7 +29,7 @@
   </style>
   <body>
     <h1>เจ้าของภาพนี้ถูกแท็กเรียบร้อยแล้ว</h1>
-    <a href="status_tag.php"><img src="cartoon.png"></a>
+    <a href="status_tag.php"><img src="image/cartoon.png"></a>
 
   </body>
 </html>

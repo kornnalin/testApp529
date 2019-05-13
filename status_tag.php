@@ -35,21 +35,10 @@ if ($_GET) {
     <h3><b>ภาพที่ถูกแท็กเจ้าของภาพแล้ว<b></h3>
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 col-md-3 col-lg-3 " >
-            <img src="327.jpg" alt="P'Ann">
-            <h4><b>เวลา : </b>07:59</h4>
-        </div>
         <div class="col-sm-4 col-md-3 col-lg-3" >
-            <img src="329.jpg" alt="P'Parwim">
-            <h4><b>เวลา : </b>08:00</h4>
+            <img src="image/2019-03-20_17_14_12.jpg" alt="P'Parwim">
+            <h4><b>เวลา : </b>17:14</h4>
         </div>
-        <div class="col-sm-4 col-md-3 col-lg-3" >
-            <img src="330.jpg" alt="P'Sanon">
-            <h4><b>เวลา : </b>08:00</h4>
-        </div>
-        <div class="col-sm-4 col-md-3 col-lg-3" >
-            <img src="331.jpg" alt="P'Maiy">
-            <h4><b>เวลา : </b>08:00</h4>
         </div>
       </div>
       </div>
@@ -60,7 +49,7 @@ if ($_GET) {
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-md-3 col-lg-3" >
-            <a href="tag.php"><img src="335.jpg" alt="P'Tangmo"></a>
+            <a href="tag1.php"><img src="image/2019-03-20_16_47_36.jpg" alt="P'A"></a>
         </div>
       </div>
   </div>

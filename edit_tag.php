@@ -33,7 +33,7 @@ if($_GET){
   //echo $edit_tag."<br>";
   ?>
   <div class="container">
-      <center><img src="2019-01-30_12_44_21.jpg" alt="image" class="col-sm-4 col-md-4"></center>
+      <center><img src="image/2019-03-20_17_14_12.jpg" alt="image" class="col-sm-4 col-md-4"></center>
     <div class="container">
       <h3><b>เจ้าของภาพ : <?php echo $edit_tag ?></b></h3>
     <form>
@@ -47,7 +47,8 @@ if($_GET){
             <option name="CP04">พี่นพดล</option>
             <option name="CP05">พี่สานนท์</option>
           </select>
-          <input style="margin-top: 10px;" type="submit" name="send_status" value="ยืนยัน">
+          <!-- <input class="name" style="margin-top:10px; background-color:white;" type="submit" name="send_status" value="ยืนยัน"> -->
+          <input class="choose_status" style="margin-top: 10px;  " type="submit" name="send_status" value="ยืนยัน">
         </div>
     </form>
   </div>
