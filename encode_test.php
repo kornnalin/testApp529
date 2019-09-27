@@ -28,11 +28,11 @@ if(isset($_POST['type'])){
       if($type == 'Encode'){
           $encode_str = base64_encode($str);
           echo $type." : <br>";
-          echo .$encode_str;
+          echo $encode_str;
       }else if($type == 'Decode'){
           $decode_str = base64_decode($str);
           echo $type." : <br>";
-          echo .$decode_str;
+          echo $decode_str;
       }
   }
 }
