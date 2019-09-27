@@ -5,13 +5,13 @@
     <title>Encode Decode</title>
   </head>
   <body>
-    <select name="type">
-        <option value="Encode"></option>
-        <option value="Decode"></option>
-    </select>
     <form  action="encode_test.php" method="post">
-      Input :  <input type="text" name="str_encode">
-      <input type="submit" name="sub_send" value="Commit">
+        <select name="type">
+            <option name='encode' value="Encode">Encode</option>
+            <option name='decode' value="Decode">Decode</option>
+        </select>
+        Input :  <input type="text" name="str_encode">
+        <input type="submit" name="sub_send" value="Commit">
     </form>
 
   </body>
@@ -27,5 +27,5 @@ if ($str) {
   $str = 'This is an encoded string';
   echo base64_encode($str);
 }
-
+5555
 ?>
