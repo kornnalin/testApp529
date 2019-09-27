@@ -27,7 +27,7 @@ if(isset($_POST['type'])){
   }else if(isset($str)){
       if($type == 'Encode'){
           echo $type." ".$str."<br>";
-      }else{
+      }else if($type == 'Decode'){
         echo $type." ".$str."<br>";
       }
   }
