@@ -24,8 +24,12 @@ if(isset($_POST['type'])){
   $str = $_POST['str'];
   if ($type == '----Selest Option----') {
     echo "55555";
-  }else {
+  }else if(isset($str)){
+      if($type == 'Encode'){
+          echo $type." ".$str."<br>";
+      }else{
         echo $type." ".$str."<br>";
+      }
   }
 }
 ?>
