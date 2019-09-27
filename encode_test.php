@@ -18,7 +18,7 @@
 </html>
 
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['type'])){
   $type = $_POST['type'];
   $str = $_POST['str'];
   echo $type." ".$str."<br>";
