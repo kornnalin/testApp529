@@ -7,6 +7,7 @@
   <body>
     <form  action="encode_test.php" method="post">
         <select name="type">
+            <option value="----Selest Option----"></option>
             <option value="Encode">Encode</option>
             <option value="Decode">Decode</option>
         </select>
@@ -21,7 +22,10 @@
 if(isset($_POST['type'])){
   $type = $_POST['type'];
   $str = $_POST['str'];
-  echo $type." ".$str."<br>";
+  if ($type == '----Selest Option----') {
+    echo "55555";
+  }else {
+        echo $type." ".$str."<br>";
+  }
 }
 ?>
-//$_REQUEST
