@@ -23,7 +23,7 @@ if(isset($_POST['type'])){
   $type = $_POST['type'];
   $str = $_POST['str'];
   if ($type == '----Selest Option----') {
-    echo "55555";
+    echo "Select Option and Yor Input";
   }else if(isset($str)){
       if($type == 'Encode'){
           $encode_str = base64_encode($str);
