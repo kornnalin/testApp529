@@ -26,9 +26,13 @@ if(isset($_POST['type'])){
     echo "55555";
   }else if(isset($str)){
       if($type == 'Encode'){
-          echo $type." ".$str."<br>";
+          $encode_str = base64_encode($str);
+          echo $type." : <br>";
+          echo .$encode_str;
       }else if($type == 'Decode'){
-        echo $type." ".$str."<br>";
+          $decode_str = base64_decode($str);
+          echo $type." : <br>";
+          echo .$decode_str;
       }
   }
 }
