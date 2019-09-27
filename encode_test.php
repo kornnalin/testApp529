@@ -7,10 +7,10 @@
   <body>
     <form  action="encode_test.php" method="post">
         <select name="type">
-            <option name='encode' value="Encode">Encode</option>
-            <option name='decode' value="Decode">Decode</option>
+            <option value="Encode">Encode</option>
+            <option value="Decode">Decode</option>
         </select>
-        Input :  <input type="text" name="str_encode">
+        Input :  <input type="text" name="str">
         <input type="submit" name="sub_send" value="Commit">
     </form>
 
@@ -18,14 +18,10 @@
 </html>
 
 <?php
-$type = $_REQUST['type'];
-$str = $_REQUST['str_encode'];
-if($type){
-  echo $type.'\n';
+if(isset($_POST['submit'])){
+  $type = $_POST['type'];
+  $str = $_POST['str'];
+  echo $type." ".$str."<br>";
 }
-if ($str) {
-  $str = 'This is an encoded string';
-  echo base64_encode($str);
-}
-5555
 ?>
+//$_REQUEST
